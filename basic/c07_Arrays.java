@@ -1,6 +1,7 @@
 package basic;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class c07_Arrays {
     public static void main(String[] args) {
@@ -39,6 +40,8 @@ public class c07_Arrays {
         System.out.println(list.getFirst()); // del inicio
         System.out.println(list.getLast()); // del final
 
+        System.out.println(list.subList(1, 3)); // Mostramos partes del  ArrayList
+
         // modificamos un dato de una posicion
         list.set(2, "LeoDev");
         System.out.println(list.getLast());
@@ -59,5 +62,15 @@ public class c07_Arrays {
         // Limpiamos todo el ArraysList
         list.clear();
         System.out.println(list.size());
+
+        // Clonamos el ArrayList (caja diferente mismo contenido)
+        var newList = list.clone();
+        System.out.println(newList);
+
+        // ---------------- Lista inmutable (tupla) -----------
+
+        var tupla = List.of(1, 2, 3,6, 6, 7, 9);
+        System.out.println(tupla);
+
     }
 }
