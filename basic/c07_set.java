@@ -19,6 +19,7 @@ public class c07_set {
         myset.remove("LeoDev"); // Elimina por dato
         myset.clear(); // LImpiamos todo el set
         myset.size(); // Devuelve el tamaño del set
+        myset.isEmpty(); // Comprueba si esta vacio
 
         // ----------- Funciones de conjuntos (creamos set con datos) --------------
         
