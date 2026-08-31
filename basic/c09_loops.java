@@ -88,6 +88,8 @@ public class c09_loops {
             } else if (contador1 == 7) {
                 // rompemos el bucle si entra aqui
                 break;
+            }
+        } while (false);
 
     }
     
