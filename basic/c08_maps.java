@@ -20,8 +20,6 @@ public class c08_maps {
         map.keySet(); // Devuelve lista de valores
         map.entrySet(); // Devuelve lista de pares (clave, valor)
 
-        map.replace("Kriptom", "Prueba@gmail.com"); // Actulizar una clave
-
         // Elimina ro limpiar
         map.remove("Kriptom");  // Eliminamos el par y devuelve su valor
         map.clear();  // Limpiamos todo el mapa
@@ -30,6 +28,12 @@ public class c08_maps {
         map.containsKey("Kriptom");  // comprobamos si existe la clave
         map.containsValue("Kriptom@gmail.com");  // comprobamos si existe el valor
         map.isEmpty();  // Comprueba si esta vacio o no
+
+        // Otras funciones
+        map.replace("Kriptom", "Prueba@gmail.com"); // Actulizar una clave
+        map.size();  // Longitud del mapa
+        map.clone(); // Clona el contenido del mapa
+        map.clear();  // Elimina o limpia el mapa
 
        
 

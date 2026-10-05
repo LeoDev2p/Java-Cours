@@ -35,7 +35,7 @@ public class c06_Conditional {
 
         // switch con flecha ->
 
-        var result = switch (day) {
+        var result = switch (Integer.valueOf(day)) {
             case 1, 3, 5, 7 -> "Es un dia impar"; // retorno automatico
             
             case 2, 4, 6 -> {
@@ -45,6 +45,7 @@ public class c06_Conditional {
                     yield "Es un dia par";
                 }
             }
+            case Integer e when e > 10 && e < 20 -> "Rango permitdio";
             default -> {
                 yield "No existe ese dia";
             }

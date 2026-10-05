@@ -1,6 +1,7 @@
 package basic;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class c07_Arrays {
@@ -56,7 +57,8 @@ public class c07_Arrays {
         list.removeLast();
         System.out.println(list);
 
-        // buscamos si existe un elemento
+
+        // buscamos si existe un elemento IN
         System.out.println(list.contains("Brenda"));
 
         // Limpiamos todo el ArraysList
@@ -66,6 +68,13 @@ public class c07_Arrays {
         // Clonamos el ArrayList (caja diferente mismo contenido)
         var newList = list.clone();
         System.out.println(newList);
+
+        // invertir orden
+        System.out.println(list.reversed());
+
+        // Ordenar  y revertir
+        list.sort(Comparator.naturalOrder());
+        list.sort(Comparator.reverseOrder());
 
         // ---------------- Lista inmutable (tupla) -----------
 
